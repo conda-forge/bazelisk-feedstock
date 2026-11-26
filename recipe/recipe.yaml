@@ -1,5 +1,5 @@
 context:
-  version: "1.29.0"
+  version: "1.31.0"
 
 package:
   name: bazelisk
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/bazelbuild/bazelisk/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: 7e4c7b8ade016052e63c1553cb4fbe0c4fe921e1e66913d49eef074ed894e933
+  sha256: 7aff92f74b73f1560bd1425ca853e6b5f78babef11f4ab10582165fa82a63ad4
   target_directory: src
 
 build:
-  number: 1
+  number: 0
   script:
     - cd src
     - go-licenses save . --save_path ../library_licenses
